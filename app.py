@@ -35,7 +35,7 @@ if prompt:
                 response = client.chat.completions.create(
                     model ="openai/gpt-oss-120b",
                     messages=messages,
-                    max_tokens=1000,
+                    max_tokens=500,
                     tempreture=0.7
                 )
                 ansewr= response.choices[0].message.content
